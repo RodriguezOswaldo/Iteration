@@ -39,6 +39,16 @@ namespace Iteration
                     Console.WriteLine(ii);
                 ii++;
             }
+
+            while (true)
+            {
+                Console.WriteLine("Type your name: ");
+                var input = Console.ReadLine();
+
+                if (String.IsNullOrWhiteSpace(input))
+                    break;
+                Console.WriteLine("@Echo: " + input);
+            }
         }
     }
 }
