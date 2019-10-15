@@ -10,10 +10,16 @@ namespace Iteration
         {
             var random = new Random();
             int number = random.Next(1, 20);
-            for (var i = 0; i != number; i++)
+            int i;
+            for ( i = 0; i != number; i++)
                 Console.WriteLine(i);
+            if(number == i)
+                Console.WriteLine(i);
+            
+            else
+            {
                 Console.WriteLine("no the number");
-                
+            }
         }
     }
 }
