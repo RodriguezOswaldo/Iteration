@@ -6,6 +6,7 @@ namespace Iteration
 {
     class SimpleLoops
     {
+        #region Loops
         public static void Loops()
         {
             for (var i = 1; i <= 10; i++)
@@ -30,5 +31,6 @@ namespace Iteration
                     Console.WriteLine(i);
             }
         }
+#endregion
     }
 }

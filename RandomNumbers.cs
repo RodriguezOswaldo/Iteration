@@ -6,7 +6,8 @@ namespace Iteration
 {
     class RandomNumbers
     {
-        public static void newRandom()
+        #region NewRamdom
+        public static void NewRandom()
         {
             //To see the random number represented by a string
             //https:///www.ascii-code.com/
@@ -23,6 +24,8 @@ namespace Iteration
                 Console.WriteLine("no the number");
             }
         }
+        #endregion
+        #region RandomCharacter
 
         public static void RandomCharacter()
         {
@@ -33,19 +36,20 @@ namespace Iteration
                 Console.Write((char)random.Next(97, 122));
             Console.WriteLine("\n");
         }
-
-        public static void storingRandomNo()
+        #endregion
+        #region StoringRandomPassword
+        public static void StoringRandomNo()
         {
             var random = new Random();
             const int passwordLength = 10;
             var buffer = new char[passwordLength];
+
             for (var i = 0; i < passwordLength; i++)
                 buffer[i] = (char) ('a' + random.Next(0, 26));
-
             var password =  new string(buffer);
-
             Console.WriteLine(password);
 
         }
+        #endregion
     }
 }
