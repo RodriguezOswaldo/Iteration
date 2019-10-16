@@ -6,7 +6,7 @@ namespace Iteration
 {
     public class ForLoop
     {
-        public static void moreLoops()
+        public static void MoreLoops()
         {
             Console.WriteLine("\n");
             Console.WriteLine("Using For Loops");
