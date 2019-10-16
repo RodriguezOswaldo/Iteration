@@ -10,6 +10,8 @@ namespace Iteration
             //SimpleLoops.Loops();
             //ForLoop.moreLoops();
             RandomNumbers.newRandom();
+            RandomNumbers.RandomCharacter();
+            RandomNumbers.storingRandomNo();
         }
     }
 }
